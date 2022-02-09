@@ -1,0 +1,85 @@
+---
+title: "[Python] input() vs sys.stdin.readline()"
+excerpt : Python 입력받기
+categories:
+  - Python
+tags:
+  - Python
+  
+date: 2022-02-09
+last_modified_at: 2022-02-09
+---
+
+BOJ 10989번 푸는 도중 메모리 초과가 났다.
+
+찾아보니 input() 떄문이다. <br/><br/>
+
+# 📌 input()
+- prompt 인수가 존재하고, 개행없이 표준 출력에 기록됨
+- 사용자 입력 받기 -> 문자열 변환 -> 개행 제거(rstrip() 함수 적용)
+<br/><br/>
+
+# 📌 sys.stdin.readline()
+- prompt 인수 받지 않고, 개행 문자 포함한 값을 리턴
+<br/><br/>
+
+### 💡 결론
+- 한 줄은 input() 받아도 무방
+- 반복문으로 여러줄 입력받을 때는 sys.stdin.readline() 써야 시간초과 발생 안함
+<br/><br/>
+
+
+# 💡 sys.stdin.readline() 사용법
+
+## 📘 한 개의 정수를 입력받을 때
+
+```python
+import sys
+a = int(sys.stdin.readline())
+```
+
+❗️ 한줄 단위로 입력받기 때문에, 개행문자(\n)까지 저장됨 <br/>
+❗️ 그래서 int()로 해줘야함
+ <br/> <br/>
+
+## 📘 정해진 개수의 정수를 한줄에 입력받을 때
+
+```python
+import sys
+a,b,c = map(int, sys.stdin.readlines().split())
+```
+<br/> 
+
+## 📘 임의의 개수의 정수를 한줄에 입력받아 리스트에 저장할 때
+```python
+import sys
+data = list(map(int, sys.stdin.readlines().split()))
+```
+
+❗️split() 안에 아무 값도 넣지 않으면 공백(스페이스, 탭, 엔터 등)을 기준으로 나눈다.
+<br/><br/>
+
+## 📘 임의의 개수의 정수를 n줄 입력받아 2차원 리스트에 저장할 때
+
+```python
+import sys
+data = []
+n = int(sys.stdin.readline())
+for i in range(n):
+    data.append(list(map(int, sys.stdin.readline().split())))
+```
+<br/>
+
+## 📘 문자열 n줄을 입력받아 리스트에 저장할 때
+```python
+import sys
+n = int(sys.stdin.readline())
+data = [sys.stdin.readline().strip() for i in range(n)]
+```
+
+❗️strip()은 문자열 맨 앞과 맨 끝의 공백문자 제거 
+<br/><br/>
+
+**출처** <br/>
+
+[참고](https://velog.io/@yeseolee/Python-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9E%85%EB%A0%A5-%EC%A0%95%EB%A6%ACsys.stdin.readline)
