@@ -3,7 +3,7 @@ title: "[SpringBoot] ./gradlew.bat build : command not found"
 excerpt : 
 categories:
   - SpringBoot
-  
+  - Error
 tags:
 
 
