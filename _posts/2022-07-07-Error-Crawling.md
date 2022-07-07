@@ -1,0 +1,26 @@
+---
+title: "[MAC OS] 개발자를 확인할 수 없기 때문에 'chromedriver'을 열 수 없습니다."
+excerpt : 
+categories:
+  - MACOS
+  - Error
+tags:
+
+
+date: 2022-07-07
+last_modified_at: 2022-07-07
+---
+
+# [MAC OS] 개발자를 확인할 수 없기 때문에 'chromedriver'을 열 수 없습니다.
+
+### 해결방법
+Chrome의 버전이 맞지 않는 경우에 이런 오류가 날 수도 있다고 한다.<br/>
+버전 확인했는데 버전은 맞았다!!ㅜㅜ<br/><br/>
+
+구글링으로 다른 해결방법을 찾았다!
+~~~
+$ cd ~/{chromedriver 파일 위치}
+$ xattr -d com.apple.quarantine chromedriver 
+~~~
+
+위의 명령어를 실행하고 다시 chromedriver을 켜보면 정상적으로 동작한다!!
