@@ -3,11 +3,12 @@ title: "[Error][Spring] Port 8080 was already in use."
 excerpt:
 categories:
   - Spring
-  - Error
+  - Spring_Error
 tags:
 
 date: 2022-08-01
 last_modified_at: 2022-08-01
+sidebar_main: true
 ---
 
 ## Tomcat Error : Port 8080 was already in use.

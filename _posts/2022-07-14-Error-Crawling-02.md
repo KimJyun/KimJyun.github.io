@@ -8,6 +8,7 @@ tags:
 
 date: 2022-07-14
 last_modified_at: 2022-07-14
+sidebar_main: true
 ---
 
 ```

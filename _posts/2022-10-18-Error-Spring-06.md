@@ -3,11 +3,12 @@ title: "[Error][Spring] 빌드 시 java 버전에 의한 오류 및 해결"
 excerpt:
 categories:
   - Spring
-  - Error
+  - Spring_Error
 tags:
 
 date: 2022-10-18
 last_modified_at: 2022-10-18
+sidebar_main: true
 ---
 
 에러 메시지

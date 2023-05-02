@@ -3,12 +3,13 @@ title: "[SpringBoot] ./gradlew.bat build : command not found"
 excerpt : 
 categories:
   - SpringBoot
-  - Error
+  - Spring_Error
 tags:
 
 
 date: 2022-05-07
 last_modified_at: 2022-05-07
+sidebar_main: true
 ---
 
 # [SpringBoot] Window : ./gradlew.bat build error

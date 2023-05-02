@@ -3,11 +3,12 @@ title: "[Error][Spring] org.mariadb.jdbc.Driver 오류"
 excerpt:
 categories:
   - Spring
-  - Error
+  - Spring_Error
 tags:
 
 date: 2022-09-19
 last_modified_at: 2022-09-19
+sidebar_main: true
 ---
 
 `application.properies`에서 driver 부분이 인식을 못하고 빨간색으로 되어 있었고, 스프링부트 실행하면 오류가 떴다.

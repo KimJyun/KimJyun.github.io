@@ -9,6 +9,7 @@ tags:
 
 date: 2022-09-04
 last_modified_at: 2022-09-04
+sidebar_main: true
 ---
 
 # [IntelliJ]: Indent Issue : 적용한 Indent가 작동 안되는 이슈

@@ -3,11 +3,12 @@ title: "[Error][Spring] @BeforeAll @AfterAll 사용시 JUnitException"
 excerpt:
 categories:
   - Spring
-  - Error
+  - Spring_Error
 tags:
 
 date: 2022-10-10
 last_modified_at: 2022-10-10
+sidebar_main: true
 ---
 
 테스트 코드에 @BeforeAll, @AfterAll 어노테이션을 썼는데, 아래와 같은 오류가 났다.

@@ -3,11 +3,12 @@ title: "[Error][Spring][AWS] java.sql.SQLException: No database selected "
 excerpt:
 categories:
   - Spring
-  - Error
+  - Spring_Error
 tags:
 
 date: 2022-10-18
 last_modified_at: 2022-10-18
+sidebar_main: true
 ---
 
 로컬 DB 사용하다가 AWS RDS로 바꾸고 배포 하려고 하는데 오류가 났다.
